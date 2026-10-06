@@ -1,5 +1,7 @@
 # F Renamer
 
+🇬🇧 English · [🇷🇺 Русский](README.ru.md)
+
 A simple, fast and native macOS utility for batch renaming files.
 
 F Renamer was originally created as a small tool for speeding up repetitive file organization in a music production workflow. It has since evolved into a general-purpose file renaming utility for macOS.
