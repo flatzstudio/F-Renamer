@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000001 /* Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift */; };
+		A00000000000000000000002 /* Sources/MultitrackCleaner/Models/AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000002 /* Sources/MultitrackCleaner/Models/AudioFile.swift */; };
+		A00000000000000000000003 /* Sources/MultitrackCleaner/Models/RenameProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* Sources/MultitrackCleaner/Models/RenameProposal.swift */; };
+		A00000000000000000000004 /* Sources/MultitrackCleaner/FileSystem/FileAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* Sources/MultitrackCleaner/FileSystem/FileAccess.swift */; };
+		A00000000000000000000005 /* Sources/MultitrackCleaner/FileSystem/FileScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000005 /* Sources/MultitrackCleaner/FileSystem/FileScanner.swift */; };
+		A00000000000000000000006 /* Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000006 /* Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift */; };
+		A00000000000000000000007 /* Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000007 /* Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift */; };
+		A00000000000000000000008 /* Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000008 /* Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift */; };
+		A00000000000000000000009 /* Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000009 /* Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift */; };
+		A00000000000000000000010 /* Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000010 /* Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift */; };
+		A00000000000000000000011 /* Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift */; };
+		A00000000000000000000012 /* Sources/MultitrackCleaner/Rename/RenameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* Sources/MultitrackCleaner/Rename/RenameValidator.swift */; };
+		A00000000000000000000013 /* Sources/MultitrackCleaner/Rename/RenamePlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000013 /* Sources/MultitrackCleaner/Rename/RenamePlanner.swift */; };
+		A00000000000000000000014 /* Sources/MultitrackCleaner/Rename/RenameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* Sources/MultitrackCleaner/Rename/RenameEngine.swift */; };
+		A00000000000000000000016 /* Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000016 /* Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift */; };
+		A00000000000000000000017 /* Sources/MultitrackCleaner/Views/DropZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000017 /* Sources/MultitrackCleaner/Views/DropZone.swift */; };
+		A00000000000000000000018 /* Sources/MultitrackCleaner/Views/RenameTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* Sources/MultitrackCleaner/Views/RenameTable.swift */; };
+		A00000000000000000000019 /* Sources/MultitrackCleaner/Views/MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* Sources/MultitrackCleaner/Views/MainWindow.swift */; };
+		A00000000000000000000020 /* Sources/MultitrackCleaner/Resources/InstrumentDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* Sources/MultitrackCleaner/Resources/InstrumentDictionary.json */; };
+		A00000000000000000000022 /* Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000022 /* Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift */; };
+		A00000000000000000000023 /* MultitrackCleaner.app in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000000021 /* MultitrackCleaner.app */; };
+		A00000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift */; };
+		A00000000000000000000025 /* Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000025 /* Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift */; };
+		A00000000000000000000026 /* Sources/MultitrackCleaner/App/FinderImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift */; };
+		A00000000000000000000027 /* MultitrackCleanerFinderAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A10000000000000000000030 /* MultitrackCleanerFinderAction.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A00000000000000000000028 /* Sources/MultitrackCleaner/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000031 /* Sources/MultitrackCleaner/Assets.xcassets */; };
+		A00000000000000000000029 /* Extensions/MultitrackCleanerFinderAction/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000032 /* Extensions/MultitrackCleanerFinderAction/Assets.xcassets */; };
+		A00000000000000000000033 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000034 /* en.json */; };
+		A00000000000000000000035 /* ru.json in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000036 /* ru.json */; };
+		A00000000000000000000037 /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000038 /* AppLocalization.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CCA61A03073BE510014B8C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A70000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40000000000000000000003;
+			remoteInfo = MultitrackCleanerFinderAction;
+		};
+		7CCA61A13073BE510014B8C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A70000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40000000000000000000001;
+			remoteInfo = MultitrackCleaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A30000000000000000000008 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A00000000000000000000027 /* MultitrackCleanerFinderAction.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A10000000000000000000001 /* Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 /* Sources/MultitrackCleaner/Models/AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Models/AudioFile.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 /* Sources/MultitrackCleaner/Models/RenameProposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Models/RenameProposal.swift; sourceTree = "<group>"; };
+		A10000000000000000000004 /* Sources/MultitrackCleaner/FileSystem/FileAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/FileSystem/FileAccess.swift; sourceTree = "<group>"; };
+		A10000000000000000000005 /* Sources/MultitrackCleaner/FileSystem/FileScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/FileSystem/FileScanner.swift; sourceTree = "<group>"; };
+		A10000000000000000000006 /* Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift; sourceTree = "<group>"; };
+		A10000000000000000000007 /* Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift; sourceTree = "<group>"; };
+		A10000000000000000000008 /* Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift; sourceTree = "<group>"; };
+		A10000000000000000000009 /* Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift; sourceTree = "<group>"; };
+		A10000000000000000000010 /* Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift; sourceTree = "<group>"; };
+		A10000000000000000000011 /* Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* Sources/MultitrackCleaner/Rename/RenameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Rename/RenameValidator.swift; sourceTree = "<group>"; };
+		A10000000000000000000013 /* Sources/MultitrackCleaner/Rename/RenamePlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Rename/RenamePlanner.swift; sourceTree = "<group>"; };
+		A10000000000000000000014 /* Sources/MultitrackCleaner/Rename/RenameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Rename/RenameEngine.swift; sourceTree = "<group>"; };
+		A10000000000000000000016 /* Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000017 /* Sources/MultitrackCleaner/Views/DropZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Views/DropZone.swift; sourceTree = "<group>"; };
+		A10000000000000000000018 /* Sources/MultitrackCleaner/Views/RenameTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Views/RenameTable.swift; sourceTree = "<group>"; };
+		A10000000000000000000019 /* Sources/MultitrackCleaner/Views/MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/Views/MainWindow.swift; sourceTree = "<group>"; };
+		A10000000000000000000020 /* Sources/MultitrackCleaner/Resources/InstrumentDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sources/MultitrackCleaner/Resources/InstrumentDictionary.json; sourceTree = "<group>"; };
+		A10000000000000000000021 /* MultitrackCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultitrackCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000022 /* Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift; sourceTree = "<group>"; };
+		A10000000000000000000023 /* MultitrackCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitrackCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/App/FinderImport.swift; sourceTree = "<group>"; };
+		A10000000000000000000025 /* Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift; sourceTree = "<group>"; };
+		A10000000000000000000026 /* Sources/MultitrackCleaner/App/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sources/MultitrackCleaner/App/Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000027 /* Sources/MultitrackCleaner/App/MultitrackCleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sources/MultitrackCleaner/App/MultitrackCleaner.entitlements; sourceTree = "<group>"; };
+		A10000000000000000000028 /* Extensions/MultitrackCleanerFinderAction/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Extensions/MultitrackCleanerFinderAction/Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000029 /* Extensions/MultitrackCleanerFinderAction/MultitrackCleanerFinderAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extensions/MultitrackCleanerFinderAction/MultitrackCleanerFinderAction.entitlements; sourceTree = "<group>"; };
+		A10000000000000000000030 /* MultitrackCleanerFinderAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MultitrackCleanerFinderAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000031 /* Sources/MultitrackCleaner/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sources/MultitrackCleaner/Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000032 /* Extensions/MultitrackCleanerFinderAction/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Extensions/MultitrackCleanerFinderAction/Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000034 /* en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sources/MultitrackCleaner/Resources/Localizations/en.json; sourceTree = "<group>"; };
+		A10000000000000000000036 /* ru.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sources/MultitrackCleaner/Resources/Localizations/ru.json; sourceTree = "<group>"; };
+		A10000000000000000000038 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/MultitrackCleaner/App/AppLocalization.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000023 /* MultitrackCleaner.app in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000001 /* Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift */,
+				A10000000000000000000038 /* AppLocalization.swift */,
+				A10000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift */,
+				A10000000000000000000026 /* Sources/MultitrackCleaner/App/Info.plist */,
+				A10000000000000000000027 /* Sources/MultitrackCleaner/App/MultitrackCleaner.entitlements */,
+				A10000000000000000000031 /* Sources/MultitrackCleaner/Assets.xcassets */,
+				A10000000000000000000002 /* Sources/MultitrackCleaner/Models/AudioFile.swift */,
+				A10000000000000000000003 /* Sources/MultitrackCleaner/Models/RenameProposal.swift */,
+				A10000000000000000000004 /* Sources/MultitrackCleaner/FileSystem/FileAccess.swift */,
+				A10000000000000000000005 /* Sources/MultitrackCleaner/FileSystem/FileScanner.swift */,
+				A10000000000000000000006 /* Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift */,
+				A10000000000000000000007 /* Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift */,
+				A10000000000000000000008 /* Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift */,
+				A10000000000000000000009 /* Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift */,
+				A10000000000000000000010 /* Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift */,
+				A10000000000000000000011 /* Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift */,
+				A10000000000000000000012 /* Sources/MultitrackCleaner/Rename/RenameValidator.swift */,
+				A10000000000000000000013 /* Sources/MultitrackCleaner/Rename/RenamePlanner.swift */,
+				A10000000000000000000014 /* Sources/MultitrackCleaner/Rename/RenameEngine.swift */,
+				A10000000000000000000016 /* Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift */,
+				A10000000000000000000017 /* Sources/MultitrackCleaner/Views/DropZone.swift */,
+				A10000000000000000000018 /* Sources/MultitrackCleaner/Views/RenameTable.swift */,
+				A10000000000000000000019 /* Sources/MultitrackCleaner/Views/MainWindow.swift */,
+				A10000000000000000000020 /* Sources/MultitrackCleaner/Resources/InstrumentDictionary.json */,
+				A10000000000000000000034 /* en.json */,
+				A10000000000000000000036 /* ru.json */,
+				A10000000000000000000025 /* Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift */,
+				A10000000000000000000028 /* Extensions/MultitrackCleanerFinderAction/Info.plist */,
+				A10000000000000000000029 /* Extensions/MultitrackCleanerFinderAction/MultitrackCleanerFinderAction.entitlements */,
+				A10000000000000000000032 /* Extensions/MultitrackCleanerFinderAction/Assets.xcassets */,
+				A10000000000000000000022 /* Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift */,
+				A20000000000000000000002 /* Products */,
+				A20000000000000000000003 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A20000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000000021 /* MultitrackCleaner.app */,
+				A10000000000000000000023 /* MultitrackCleanerTests.xctest */,
+				A10000000000000000000030 /* MultitrackCleanerFinderAction.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20000000000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40000000000000000000001 /* MultitrackCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50000000000000000000001 /* Build configuration list for PBXNativeTarget "MultitrackCleaner" */;
+			buildPhases = (
+				A30000000000000000000002 /* Sources */,
+				A30000000000000000000003 /* Frameworks */,
+				A30000000000000000000001 /* Resources */,
+				A30000000000000000000008 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = MultitrackCleaner;
+			productName = MultitrackCleaner;
+			productReference = A10000000000000000000021 /* MultitrackCleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A40000000000000000000002 /* MultitrackCleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50000000000000000000003 /* Build configuration list for PBXNativeTarget "MultitrackCleanerTests" */;
+			buildPhases = (
+				A30000000000000000000004 /* Sources */,
+				A30000000000000000000005 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = MultitrackCleanerTests;
+			productName = MultitrackCleanerTests;
+			productReference = A10000000000000000000023 /* MultitrackCleanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A40000000000000000000003 /* MultitrackCleanerFinderAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50000000000000000000004 /* Build configuration list for PBXNativeTarget "MultitrackCleanerFinderAction" */;
+			buildPhases = (
+				A30000000000000000000006 /* Sources */,
+				A30000000000000000000007 /* Frameworks */,
+				A30000000000000000000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultitrackCleanerFinderAction;
+			productName = MultitrackCleanerFinderAction;
+			productReference = A10000000000000000000030 /* MultitrackCleanerFinderAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A40000000000000000000001 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A40000000000000000000002 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = A40000000000000000000001;
+					};
+					A40000000000000000000003 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A50000000000000000000002 /* Build configuration list for PBXProject "MultitrackCleaner" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A20000000000000000000001;
+			productRefGroup = A20000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40000000000000000000001 /* MultitrackCleaner */,
+				A40000000000000000000002 /* MultitrackCleanerTests */,
+				A40000000000000000000003 /* MultitrackCleanerFinderAction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000020 /* Sources/MultitrackCleaner/Resources/InstrumentDictionary.json in Resources */,
+				A00000000000000000000028 /* Sources/MultitrackCleaner/Assets.xcassets in Resources */,
+				A00000000000000000000033 /* en.json in Resources */,
+				A00000000000000000000035 /* ru.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000029 /* Extensions/MultitrackCleanerFinderAction/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000001 /* Sources/MultitrackCleaner/App/MultitrackCleanerApp.swift in Sources */,
+				A00000000000000000000037 /* AppLocalization.swift in Sources */,
+				A00000000000000000000024 /* Sources/MultitrackCleaner/App/FinderImport.swift in Sources */,
+				A00000000000000000000002 /* Sources/MultitrackCleaner/Models/AudioFile.swift in Sources */,
+				A00000000000000000000003 /* Sources/MultitrackCleaner/Models/RenameProposal.swift in Sources */,
+				A00000000000000000000004 /* Sources/MultitrackCleaner/FileSystem/FileAccess.swift in Sources */,
+				A00000000000000000000005 /* Sources/MultitrackCleaner/FileSystem/FileScanner.swift in Sources */,
+				A00000000000000000000006 /* Sources/MultitrackCleaner/Analysis/FilenameTokenizer.swift in Sources */,
+				A00000000000000000000007 /* Sources/MultitrackCleaner/Analysis/NumberPrefixDetector.swift in Sources */,
+				A00000000000000000000008 /* Sources/MultitrackCleaner/Analysis/CommonSegmentDetector.swift in Sources */,
+				A00000000000000000000009 /* Sources/MultitrackCleaner/Analysis/InstrumentNormalizer.swift in Sources */,
+				A00000000000000000000010 /* Sources/MultitrackCleaner/Analysis/ConfidenceScorer.swift in Sources */,
+				A00000000000000000000011 /* Sources/MultitrackCleaner/Analysis/FilenameAnalyzer.swift in Sources */,
+				A00000000000000000000012 /* Sources/MultitrackCleaner/Rename/RenameValidator.swift in Sources */,
+				A00000000000000000000013 /* Sources/MultitrackCleaner/Rename/RenamePlanner.swift in Sources */,
+				A00000000000000000000014 /* Sources/MultitrackCleaner/Rename/RenameEngine.swift in Sources */,
+				A00000000000000000000016 /* Sources/MultitrackCleaner/Features/RenamePreview/RenamePreviewViewModel.swift in Sources */,
+				A00000000000000000000017 /* Sources/MultitrackCleaner/Views/DropZone.swift in Sources */,
+				A00000000000000000000018 /* Sources/MultitrackCleaner/Views/RenameTable.swift in Sources */,
+				A00000000000000000000019 /* Sources/MultitrackCleaner/Views/MainWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000022 /* Tests/MultitrackCleanerTests/MultitrackCleanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000025 /* Extensions/MultitrackCleanerFinderAction/FinderActionViewController.swift in Sources */,
+				A00000000000000000000026 /* Sources/MultitrackCleaner/App/FinderImport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40000000000000000000001 /* MultitrackCleaner */;
+			targetProxy = 7CCA61A13073BE510014B8C2 /* PBXContainerItemProxy */;
+		};
+		A80000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40000000000000000000003 /* MultitrackCleanerFinderAction */;
+			targetProxy = 7CCA61A03073BE510014B8C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A60000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A60000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				PRODUCT_NAME = "F Renamer";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A60000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = Sources/MultitrackCleaner/App/MultitrackCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=macosx*]" = x86_64;
+				INFOPLIST_FILE = Sources/MultitrackCleaner/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A60000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = Sources/MultitrackCleaner/App/MultitrackCleaner.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				"EXCLUDED_ARCHS[sdk=macosx*]" = x86_64;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/MultitrackCleaner/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.app;
+				PRODUCT_NAME = "F Renamer";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A60000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultitrackCleaner.app/Contents/MacOS/MultitrackCleaner";
+			};
+			name = Debug;
+		};
+		A60000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultitrackCleaner.app/Contents/MacOS/MultitrackCleaner";
+			};
+			name = Release;
+		};
+		A60000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = Extensions/MultitrackCleanerFinderAction/MultitrackCleanerFinderAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				"EXCLUDED_ARCHS[sdk=macosx*]" = x86_64;
+				INFOPLIST_FILE = Extensions/MultitrackCleanerFinderAction/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.app.FinderAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A60000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = Extensions/MultitrackCleanerFinderAction/MultitrackCleanerFinderAction.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"EXCLUDED_ARCHS[sdk=macosx*]" = x86_64;
+				INFOPLIST_FILE = Extensions/MultitrackCleanerFinderAction/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.multitrackcleaner.app.FinderAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A50000000000000000000001 /* Build configuration list for PBXNativeTarget "MultitrackCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000001 /* Debug */,
+				A60000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A50000000000000000000002 /* Build configuration list for PBXProject "MultitrackCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000003 /* Debug */,
+				A60000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A50000000000000000000003 /* Build configuration list for PBXNativeTarget "MultitrackCleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000005 /* Debug */,
+				A60000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A50000000000000000000004 /* Build configuration list for PBXNativeTarget "MultitrackCleanerFinderAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A60000000000000000000007 /* Debug */,
+				A60000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A70000000000000000000001 /* Project object */;
+}
